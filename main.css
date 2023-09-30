@@ -1,0 +1,384 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Gabarito&family=Teko:wght@600&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Saira Extra Condensed", "Gabarito", "Teko", "Abril Fatface", sans-serif;
+  font-size: 1.75rem;
+  line-height: 1.5rem;
+}
+
+.border-top {
+  border-top: 2px solid #DC392D;
+  width: 100vw;
+  position: fixed;
+}
+
+.main {
+  padding-left: 17rem;
+}
+@media (max-width: 992px) {
+  .main {
+    padding-left: 0;
+  }
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .subheading {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 4rem;
+}
+@media (max-width: 992px) {
+  h1 {
+    font-size: calc(1rem + 5.7vw);
+  }
+}
+
+h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 992px) {
+  h2 {
+    font-size: calc(1.5rem + 1vw);
+  }
+}
+
+h3 {
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 992px) {
+  h3 {
+    font-size: calc(1rem + 1vw);
+  }
+}
+
+.fa-brands .fa-linkedin {
+  height: 5.5rem;
+  width: 5.5rem;
+}
+
+.navbar {
+  font-weight: 800;
+  background-color: #BD5D38;
+  color: #E1B6A5;
+  width: 17rem;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .navbar-collapse {
+  width: 100vw;
+}
+.navbar .navbar-collapse .navbar-nav:hover {
+  cursor: pointer;
+}
+.navbar .navbar-collapse .navbar-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1.25rem;
+  width: 100vw;
+  text-transform: uppercase;
+}
+.navbar .navbar-collapse .navbar-nav a {
+  color: #E1B6A5;
+  text-decoration: none !important;
+}
+.navbar .navbar-collapse .navbar-nav li:hover {
+  color: #EED6CD;
+}
+.navbar img {
+  max-height: 10rem;
+  max-width: 10rem;
+  border-radius: 50%;
+  border: 0.5rem solid #CA7D60;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.active-nav {
+  color: white !important;
+}
+
+@media (max-width: 992px) {
+  .resume-photo {
+    display: none;
+  }
+}
+
+.navbar .name-toogle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .toogle {
+  display: none;
+  padding: 0.25rem 1rem;
+  border-radius: 10%;
+  background-color: #BD5D38;
+}
+@media (max-width: 992px) {
+  .navbar .toogle {
+    display: block;
+    border: 3px solid rgb(210, 210, 210);
+    margin-right: 2rem;
+  }
+}
+.navbar .toogle div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(210, 210, 210);
+  margin: 6px 0;
+}
+@media (max-width: 992px) {
+  .navbar {
+    overflow: visible;
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 2.5rem;
+    padding: 0.5rem 0 1rem 1rem;
+  }
+  .navbar .navbar-nav {
+    padding-top: 1rem;
+  }
+  .navbar .navbar-nav li {
+    display: none;
+    width: 100vw;
+    justify-content: start;
+    font-size: 1.15rem;
+  }
+}
+.navbar a {
+  text-decoration: none;
+}
+.navbar a .mobile-name {
+  color: white;
+  font-size: 1.15rem;
+  font-weight: 200;
+}
+@media (min-width: 992px) {
+  .navbar a .mobile-name {
+    display: none;
+  }
+}
+.navbar a .mobile-name li {
+  text-decoration: none;
+}
+
+.section1, .section6, .section5, .section4, .section3, .section2 {
+  border-bottom: 1px solid #DADCDE;
+  min-height: 100vh;
+  padding-left: 3rem;
+}
+@media (max-width: 992px) {
+  .section1, .section6, .section5, .section4, .section3, .section2 {
+    padding-left: 1rem;
+  }
+}
+.section1 .section1-div, .section6 .section1-div, .section6 .section6-div, .section5 .section1-div, .section5 .section5-div, .section4 .section1-div, .section4 .section4-div, .section3 .section1-div, .section3 .section3-div, .section2 .section1-div, .section2 .section2-div {
+  max-width: 75rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 2rem;
+}
+.section1 .section1-div h1 .pri-color, .section6 .section1-div h1 .pri-color, .section6 .section6-div h1 .pri-color, .section5 .section1-div h1 .pri-color, .section5 .section5-div h1 .pri-color, .section4 .section1-div h1 .pri-color, .section4 .section4-div h1 .pri-color, .section3 .section1-div h1 .pri-color, .section3 .section3-div h1 .pri-color, .section2 .section1-div h1 .pri-color, .section2 .section2-div h1 .pri-color {
+  color: #BD5D38;
+}
+.section1 .section1-div .subheading, .section6 .section1-div .subheading, .section6 .section6-div .subheading, .section5 .section1-div .subheading, .section5 .section5-div .subheading, .section4 .section1-div .subheading, .section4 .section4-div .subheading, .section3 .section1-div .subheading, .section3 .section3-div .subheading, .section2 .section1-div .subheading, .section2 .section2-div .subheading {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  color: #6C757D;
+}
+.section1 .section1-div .subheading a, .section6 .section1-div .subheading a, .section6 .section6-div .subheading a, .section5 .section1-div .subheading a, .section5 .section5-div .subheading a, .section4 .section1-div .subheading a, .section4 .section4-div .subheading a, .section3 .section1-div .subheading a, .section3 .section3-div .subheading a, .section2 .section1-div .subheading a, .section2 .section2-div .subheading a {
+  color: #BD5D38;
+  text-transform: uppercase;
+}
+.section1 .section1-div p, .section6 .section1-div p, .section6 .section6-div p, .section5 .section1-div p, .section5 .section5-div p, .section4 .section1-div p, .section4 .section4-div p, .section3 .section1-div p, .section3 .section3-div p, .section2 .section1-div p, .section2 .section2-div p {
+  font-size: 1.15rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+  color: #6C757D;
+}
+.section1 .section1-div .social-icons, .section6 .section1-div .social-icons, .section6 .section6-div .social-icons, .section5 .section1-div .social-icons, .section5 .section5-div .social-icons, .section4 .section1-div .social-icons, .section4 .section4-div .social-icons, .section3 .section1-div .social-icons, .section3 .section3-div .social-icons, .section2 .section1-div .social-icons, .section2 .section2-div .social-icons {
+  display: flex;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+.section1 .section1-div .social-icons .social-icon, .section6 .section1-div .social-icons .social-icon, .section6 .section6-div .social-icons .social-icon, .section5 .section1-div .social-icons .social-icon, .section5 .section5-div .social-icons .social-icon, .section4 .section1-div .social-icons .social-icon, .section4 .section4-div .social-icons .social-icon, .section3 .section1-div .social-icons .social-icon, .section3 .section3-div .social-icons .social-icon, .section2 .section1-div .social-icons .social-icon, .section2 .section2-div .social-icons .social-icon {
+  height: 3.5rem;
+  width: 3.5rem;
+  border: 1px solid #495057;
+  background-color: #495057;
+  color: white;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.section2 {
+  padding: 5rem 3rem;
+}
+@media (max-width: 992px) {
+  .section2 {
+    padding-left: 1rem;
+  }
+}
+.section2 .section2-div p, .section2 .section2-div .date {
+  font-size: 1rem;
+}
+.section2 .section2-div .date {
+  color: #BD5D38;
+  font-size: 1.12rem;
+  flex-shrink: 0;
+}
+.section2 .section2-div .subheading {
+  color: #495057;
+}
+.section2 .section2-div .section2-div1, .section2 .section2-div .section2-div2, .section2 .section2-div .section2-div3, .section2 .section2-div .section2-div4 {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .section2 .section2-div .section2-div1, .section2 .section2-div .section2-div2, .section2 .section2-div .section2-div3, .section2 .section2-div .section2-div4 {
+    flex-direction: column;
+  }
+}
+
+.section3 {
+  padding: 5rem 3rem;
+  row-gap: 2rem;
+}
+@media (max-width: 992px) {
+  .section3 {
+    padding-left: 1rem;
+  }
+}
+.section3 .section3-div p, .section3 .section3-div .field, .section3 .section3-div .subheading {
+  font-size: 1.12rem;
+}
+.section3 .section3-div .date {
+  color: #BD5D38;
+  font-size: 1.12rem;
+  flex-shrink: 0;
+}
+.section3 .section3-div .subheading, .section3 .section3-div .field {
+  color: #495057;
+}
+.section3 .section3-div .section3-div1, .section3 .section3-div .section3-div2 {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .section3 .section3-div .section3-div1, .section3 .section3-div .section3-div2 {
+    flex-direction: column;
+  }
+}
+
+.section4 {
+  padding: 5rem 3rem;
+  row-gap: 0.5rem;
+}
+@media (max-width: 992px) {
+  .section4 {
+    padding-left: 1rem;
+  }
+}
+.section4 .section4-div .skill-icons {
+  font-size: 3rem;
+  display: flex;
+  gap: 2rem;
+  color: #495057;
+}
+.section4 .section4-div .workflow {
+  color: #495057;
+  font-size: 1.125rem;
+}
+.section4 .section4-div .workflow li:before {
+  content: "✓";
+}
+.section4 .section4-div h2 {
+  margin-bottom: 3.5rem;
+}
+.section4 .section4-div .subheading {
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .section5 {
+    padding-left: 1rem;
+  }
+}
+.section6 {
+  padding: 5rem 3rem;
+  row-gap: 0.5rem;
+}
+@media (max-width: 992px) {
+  .section6 {
+    padding-left: 1rem;
+  }
+}
+.section6 .section6-div ul {
+  color: #495057;
+  font-size: 1.125rem;
+}
+.section6 .section6-div ul .fa-solid {
+  color: #FFC107;
+}/*# sourceMappingURL=main.css.map */

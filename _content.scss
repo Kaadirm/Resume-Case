@@ -1,0 +1,49 @@
+
+body{
+    font-family: "Saira Extra Condensed", 'Gabarito', 'Teko',  'Abril Fatface',  sans-serif;
+    font-size: 1.75rem;
+    line-height: 1.5rem;
+    // deneme yanılma için konuldu silinecek
+}
+.border-top{
+    border-top: 2px solid $topBorderColor;
+    width: 100vw;
+    position: fixed;
+}
+.main{
+        padding-left: 17rem;
+        @media (max-width: 992px){
+            padding-left: 0;
+    }
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .subheading{
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 4rem;
+    @media (max-width: 992px) {
+        font-size: calc(1rem + 5.7vw)    
+    }
+}
+h2{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+        @media (max-width: 992px) {
+            font-size: calc(1.5rem + 1vw);
+        }
+}
+h3{
+    margin-bottom: 0.5rem;
+    @media (max-width: 992px) {
+        font-size: calc(1rem + 1vw);
+    }
+}
+
+
+
+.fa-brands .fa-linkedin{
+    height: 5.5rem;
+    width: 5.5rem;
+}
