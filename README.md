@@ -1,6 +1,6 @@
 # Resume-Case
-
-![Resume-Case](https://kaadirm.github.io/Resume-Case/images/preview.png)
+![Preview Image](ResumeWeb.png)
+![Preview Image](ResumeMobile.png)
 
 ## Description
 
@@ -14,7 +14,7 @@ You can check out the live demo of Resume-Case [here](https://kaadirm.github.io/
 
 - **Interactive Design**: Resume-Case offers an engaging and interactive user experience, making your resume stand out.
 
-- **Customizable**: Easily customize your resume by editing the JSON data file to include your personal information, education, work experience, and more.
+- **Customizable**: Easily customize your resume by editing data files to include your personal information, education, work experience, and more.
 
 - **Responsive**: The design is responsive, ensuring your resume looks great on both desktop and mobile devices.
 
